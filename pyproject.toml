@@ -5,9 +5,14 @@ description = "A pylint plugin for our custom styles"
 authors = ["nextsnake"]
 license = "MIT"
 
+packages = [
+    { include = "nextstyle" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.10"
 taskipy = "^1.10.1"
+pylint = "^2.13.4"
 
 [tool.poetry.dev-dependencies]
 
