@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from astroid import nodes
 from pylint.checkers import BaseChecker
 from pylint.interfaces import IAstroidChecker
