@@ -1,7 +1,7 @@
-import astroid
-from astroid import nodes
 from typing import TYPE_CHECKING, Optional
 
+import astroid
+from astroid import nodes
 from pylint.checkers import BaseChecker
 from pylint.interfaces import IAstroidChecker
 
