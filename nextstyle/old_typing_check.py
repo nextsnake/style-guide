@@ -1,12 +1,6 @@
-from typing import TYPE_CHECKING, Optional
-
-import astroid
 from astroid import nodes
 from pylint.checkers import BaseChecker
 from pylint.interfaces import IAstroidChecker
-
-if TYPE_CHECKING:
-    from pylint.lint import PyLinter
 
 
 class OldTypingChecker(BaseChecker):
@@ -40,17 +34,6 @@ class OldTypingChecker(BaseChecker):
             "These can be replaced from typing.Optional[int] to int | None. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
         ),
     }
-    options = (
-        (
-            "ignore-ints",
-            {
-                "default": False,
-                "type": "yn",
-                "metavar": "<y or n>",
-                "help": "Allow returning non-unique integers",
-            },
-        ),
-    )
 
     def visit_importfrom(self, node: nodes.ImportFrom) -> None:
         if node.modname == "typing":
