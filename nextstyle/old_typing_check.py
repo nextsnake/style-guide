@@ -6,7 +6,7 @@ from pylint.interfaces import IAstroidChecker
 class OldTypingChecker(BaseChecker):
     __implements__ = IAstroidChecker
 
-    name = "unique-returns"
+    name = "outdated-typing"
     msgs = {
         "R9401": (
             "Outdated typing! Please use dict instead of typing.Dict",
@@ -29,7 +29,7 @@ class OldTypingChecker(BaseChecker):
             "These can be replaced from typing.Tuple[int] to tuple[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
         ),
         "R9405": (
-            "Outdated typing! Please use t1 | None instead of typing.Optional",
+            "Outdated typing! Please use <t1> | None instead of typing.Optional",
             "outdated-typing-optional",
             "These can be replaced from typing.Optional[int] to int | None. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
         ),
