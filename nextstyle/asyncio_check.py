@@ -3,10 +3,10 @@ from pylint.checkers import BaseChecker, utils
 from pylint.interfaces import IAstroidChecker
 
 
-class GetEventLoopChecker(BaseChecker):
+class AsyncIOChecker(BaseChecker):
     __implements__ = IAstroidChecker
 
-    name = "asyncio-get-event-loop"
+    name = "asyncio-best-practices"
     msgs = {
         "R9410": (
             "Using deprecated asyncio.get_event_loop. Use asyncio.get_current_loop instead.",
