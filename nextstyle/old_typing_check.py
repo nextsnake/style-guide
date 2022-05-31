@@ -13,12 +13,12 @@ class OldTypingChecker(BaseChecker):
         "R9401": (
             "Outdated typing! Please use dict instead of typing.Dict",
             "outdated-typing-dict",
-            "These can be replaced from typing.Dict[int] to dict[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
+            "These can be replaced from typing.Dict[int] to dict[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.9-.",
         ),
         "R9402": (
             "Outdated typing! Please use list instead of typing.List",
             "outdated-typing-list",
-            "These can be replaced from typing.List[int] to list[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
+            "These can be replaced from typing.List[int] to list[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.9-.",
         ),
         "R9403": (
             "Outdated typing! Please use <t1> | <t2> instead of typing.Union",
@@ -28,12 +28,12 @@ class OldTypingChecker(BaseChecker):
         "R9404": (
             "Outdated typing! Please use tuple instead of typing.Tuple",
             "outdated-typing-tuple",
-            "These can be replaced from typing.Tuple[int] to tuple[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
+            "These can be replaced from typing.Tuple[int] to tuple[int]. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.9-.",
         ),
         "R9405": (
             "Outdated typing! Please use <t1> | None instead of typing.Optional",
             "outdated-typing-optional",
-            "These can be replaced from typing.Optional[int] to int | None. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.8-.",
+            "These can be replaced from typing.Optional[int] to int | None. You may need to add `from __future__ import annotations` to your imports if you plan on supporting Python 3.10-.",
         ),
     }
 
